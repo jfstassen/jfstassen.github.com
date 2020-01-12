@@ -11,7 +11,7 @@ h1 {
   // font-family: "Pacifico", cursive;
   font-family: "Arial";
   font-weight: initial;
-  font-size: 2.4rem;
+  // font-size: 2.4rem;
   margin: 0;
   text-transform: uppercase;
   letter-spacing: -8px;
@@ -47,8 +47,14 @@ main {
   margin: 0 auto;
   max-width: 940px;
 }
-#skills{
-  
+#menu {
+  padding-right: 50px;
+  nav {
+    border-bottom: 1px #afafaf solid;
+    display: flex;
+    padding: 20px;
+    justify-content: space-evenly;
+  }
 }
 
 #bio {
@@ -62,11 +68,17 @@ main {
     #position {
       display: flex;
       justify-content: center;
+      position: absolute;
+      padding-left: 50px;
+      h3 {
+        text-align: end;
+      }
       span {
         background: brown;
         width: 5px;
         margin: 0 25px;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+          0 6px 6px rgba(0, 0, 0, 0.23);
         transform: rotate(30deg);
       }
     }
@@ -106,6 +118,7 @@ main {
     }
     p:nth-of-type(2) {
       text-align: right;
+      padding-top: 30px;
     }
   }
   .social {
@@ -131,6 +144,41 @@ main {
         width: 30px;
         margin: 15px 0;
       }
+    }
+  }
+}
+@media only screen and (max-width: 808px) {
+  #bio {
+    article {
+      h1 {
+        position: absolute;
+        left: 0;
+        transform: translateX(-50px);
+        writing-mode: vertical-rl;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 711px) {
+  #bio {
+    article {
+      min-height: 404px;
+      height: 100%;
+    }
+    .image {
+      float: none !important;
+      position: absolute !important ;
+      bottom: 0;
+      right: 0;
+      opacity: 0.05;
+    }
+  }
+}
+@media only screen and (max-width: 530px) {
+  #bio {
+    h1:first-child{
+      
+      font-size: 80px;
     }
   }
 }

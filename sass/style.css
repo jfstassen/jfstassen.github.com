@@ -11,7 +11,6 @@ img {
 h1 {
   font-family: "Arial";
   font-weight: initial;
-  font-size: 2.4rem;
   margin: 0;
   text-transform: uppercase;
   letter-spacing: -8px;
@@ -45,6 +44,21 @@ main {
   max-width: 940px;
 }
 
+#menu {
+  padding-right: 50px;
+}
+
+#menu nav {
+  border-bottom: 1px #afafaf solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 #bio {
   padding: 30px 50px 0px 50px;
 }
@@ -63,6 +77,12 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: absolute;
+  padding-left: 50px;
+}
+
+#bio article #position h3 {
+  text-align: end;
 }
 
 #bio article #position span {
@@ -95,6 +115,7 @@ main {
 
 #bio article p:nth-of-type(2) {
   text-align: right;
+  padding-top: 30px;
 }
 
 #bio .social {
@@ -134,5 +155,37 @@ main {
 #bio .social figure img {
   width: 30px;
   margin: 15px 0;
+}
+
+@media only screen and (max-width: 808px) {
+  #bio article h1 {
+    position: absolute;
+    left: 0;
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+  }
+}
+
+@media only screen and (max-width: 711px) {
+  #bio article {
+    min-height: 404px;
+    height: 100%;
+  }
+  #bio .image {
+    float: none !important;
+    position: absolute !important;
+    bottom: 0;
+    right: 0;
+    opacity: 0.05;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  #bio h1:first-child {
+    font-size: 80px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

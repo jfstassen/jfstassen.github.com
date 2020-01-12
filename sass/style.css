@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Encode+Sans&display=swap");
+body {
+  background-image: url(/assets/background.png);
+}
+
+img {
+  fill: black;
+}
+
+h1 {
+  font-family: "Arial";
+  font-weight: initial;
+  font-size: 2.4rem;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: -8px;
+  font-size: 94px;
+  line-height: 78px;
+  text-shadow: 0 0 3px #999;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(black));
+          mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(black));
+  padding-bottom: 15px;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-family: "Encode Sans", sans-serif;
+  margin: 0;
+}
+
+p {
+  font-family: "Encode Sans", sans-serif;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  line-height: 1.6em;
+}
+
+header,
+section,
+main {
+  margin: 0 auto;
+  max-width: 940px;
+}
+
+#bio {
+  padding: 30px 50px 0px 50px;
+}
+
+#bio article {
+  position: relative;
+  height: 515px;
+  border-bottom: 1px solid #afafaf;
+  border-right: 1px solid #afafaf;
+}
+
+#bio article #position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#bio article #position span {
+  background: brown;
+  width: 5px;
+  margin: 0 25px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+#bio article .image {
+  position: relative;
+  float: right;
+  max-width: 460px;
+  height: 515px;
+  width: 460px;
+  background: url(/assets/look-down-25pc.png) no-repeat center center;
+  background-size: 460px 515px;
+  shape-outside: polygon(59px 498px, 102px 453px, 132px 380px, 176px 286px, 148px 243px, 154px 196px, 132px 177px, 136px 91px, 171px 42px, 213px 11px, 254px 3px, 318px 10px, 351px 45px, 461px 278px, 460px 515px, 6px 514px);
+}
+
+#bio article p {
+  color: gray;
+  padding-top: 50px;
+  padding-left: 35px;
+  text-align: justify;
+}
+
+#bio article p:nth-of-type(2) {
+  text-align: right;
+}
+
+#bio .social {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: -45px;
+  top: 0;
+}
+
+#bio .social .contact figure {
+  position: fixed;
+  background-image: url(/assets/background.png);
+}
+
+#bio .social figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  margin-left: 15px;
+}
+
+#bio .social figure img {
+  width: 30px;
+  margin: 15px 0;
+}
+/*# sourceMappingURL=style.css.map */

@@ -38,29 +38,18 @@ p {
   margin-block-end: 0;
   line-height: 1.6em;
 }
-// main {
-//   border-radius: 0 0 30px 40px;
-// }
 header,
 section,
 main {
   margin: 0 auto;
   max-width: 940px;
 }
-#menu {
-  padding-right: 50px;
-  nav {
-    border-bottom: 1px #afafaf solid;
-    display: flex;
-    padding: 20px;
-    justify-content: space-evenly;
-  }
-}
 
 #bio {
   // display: flex; ??
-  padding: 30px 50px 0px 50px;
+  padding: 30px 60px 0px 50px;
   article {
+    box-sizing: border-box;
     position: relative;
     height: 515px;
     border-bottom: 1px solid #afafaf;
@@ -115,6 +104,7 @@ main {
       padding-top: 50px;
       padding-left: 35px;
       text-align: justify;
+      padding-right: 0.4em;
     }
     p:nth-of-type(2) {
       text-align: right;
@@ -127,7 +117,7 @@ main {
     height: inherit;
     display: flex;
     position: absolute;
-    right: -45px;
+    right: -61px;
     top: 0;
     .contact {
       figure {
@@ -136,14 +126,43 @@ main {
       }
     }
     figure {
+      a {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
       display: flex;
       flex-direction: column;
       margin: 0;
-      margin-left: 15px;
+      // padding-left: 14px;
       img {
         width: 30px;
-        margin: 15px 0;
+        // margin: 15px 0;
       }
+    }
+  }
+}
+#menu {
+  padding: 0 60px 0 0.4em;
+  nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    gap: 0.4em;
+    padding: 10px 0;
+    border-bottom: 1px #afafaf solid;
+  }
+}
+#content {
+  padding: 0.4em 60px 0px 0.4em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.4em;
+  article {
+    // grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
+    p:first-child {
+      background-color: red;
     }
   }
 }
@@ -176,9 +195,30 @@ main {
 }
 @media only screen and (max-width: 530px) {
   #bio {
-    h1:first-child{
-      
+    h1:first-child {
       font-size: 80px;
+    }
+  }
+}
+@media only screen and (max-width: 464px) {
+  #bio {
+    h1:first-child {
+      font-size: 50px;
+      letter-spacing: -5px;
+      line-height: 50px;
+    }
+    article {
+      h1 {
+        font-size: 80px;
+      }
+    }
+    #position {
+      h3:nth-of-type(2) {
+        display: none;
+      }
+      span {
+        display: none;
+      }
     }
   }
 }

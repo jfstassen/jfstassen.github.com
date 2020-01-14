@@ -44,26 +44,13 @@ main {
   max-width: 940px;
 }
 
-#menu {
-  padding-right: 50px;
-}
-
-#menu nav {
-  border-bottom: 1px #afafaf solid;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 20px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
 #bio {
-  padding: 30px 50px 0px 50px;
+  padding: 30px 60px 0px 50px;
 }
 
 #bio article {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: relative;
   height: 515px;
   border-bottom: 1px solid #afafaf;
@@ -111,6 +98,7 @@ main {
   padding-top: 50px;
   padding-left: 35px;
   text-align: justify;
+  padding-right: 0.4em;
 }
 
 #bio article p:nth-of-type(2) {
@@ -131,7 +119,7 @@ main {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  right: -45px;
+  right: -61px;
   top: 0;
 }
 
@@ -149,12 +137,45 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0;
-  margin-left: 15px;
+}
+
+#bio .social figure a {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 #bio .social figure img {
   width: 30px;
-  margin: 15px 0;
+}
+
+#menu {
+  padding: 0 60px 0 0.4em;
+}
+
+#menu nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  text-align: center;
+  gap: 0.4em;
+  padding: 10px 0;
+  border-bottom: 1px #afafaf solid;
+}
+
+#content {
+  padding: 0.4em 60px 0px 0.4em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 0.4em;
+}
+
+#content article p:first-child {
+  background-color: red;
 }
 
 @media only screen and (max-width: 808px) {
@@ -186,6 +207,23 @@ main {
 @media only screen and (max-width: 530px) {
   #bio h1:first-child {
     font-size: 80px;
+  }
+}
+
+@media only screen and (max-width: 464px) {
+  #bio h1:first-child {
+    font-size: 50px;
+    letter-spacing: -5px;
+    line-height: 50px;
+  }
+  #bio article h1 {
+    font-size: 80px;
+  }
+  #bio #position h3:nth-of-type(2) {
+    display: none;
+  }
+  #bio #position span {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

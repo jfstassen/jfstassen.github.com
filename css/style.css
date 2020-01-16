@@ -251,7 +251,19 @@ main {
   padding-left: 20px;
 }
 
-#content article:nth-of-type(1) img {
+#content article:nth-of-type(1) ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#content article:nth-of-type(1) ul li {
+  padding: 15px;
+}
+
+#content article:nth-of-type(1) ul li img {
   width: 70px;
   height: 70px;
 }
@@ -269,7 +281,11 @@ main {
   position: relative;
 }
 
-#content article:nth-of-type(2) .seal {
+#content article:nth-of-type(2) ul {
+  position: relative;
+}
+
+#content article:nth-of-type(2) ul .seal {
   opacity: 0.15;
   background: url(/assets/becode-seal.png);
   z-index: -1;
@@ -279,7 +295,7 @@ main {
   width: 150px;
   position: absolute;
   height: 150px;
-  bottom: 0;
+  top: 20px;
 }
 
 @media only screen and (max-width: 808px) {

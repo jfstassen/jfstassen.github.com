@@ -224,7 +224,12 @@ main {
   h4 {
     padding-left: 20px;
   }
-
+  article:nth-of-type(1){
+    img{
+      width: 70px;
+      height: 70px;
+    }
+  }
   article:nth-of-type(2) {
     .seal {
         opacity: 0.15;

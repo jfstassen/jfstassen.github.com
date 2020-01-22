@@ -222,33 +222,31 @@ main {
   width: 30px;
 }
 
-#menu {
-  padding: 0 60px 0 0.4em;
-}
-
-#menu nav {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  text-align: center;
-  gap: 0.4em;
-  padding: 10px 0;
-  border-bottom: 1px #afafaf solid;
-}
-
 #content {
   position: relative;
-  padding: 0.4em 60px 0px 0.4em;
+  padding: 0 60px 0px 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  gap: 0.4em;
 }
 
 #content h4 {
   padding-left: 20px;
+}
+
+#content .title {
+  border-bottom: 1px #afafaf solid;
+}
+
+#content .title h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px 0;
 }
 
 #content article:nth-of-type(1) ul {
@@ -269,24 +267,23 @@ main {
 }
 
 #content article:nth-of-type(2) {
+  display: block;
+  position: relative;
+}
+
+#content article:nth-of-type(2) ul {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-}
-
-#content article:nth-of-type(2) ul {
-  position: relative;
+  padding-top: 40px;
 }
 
 #content article:nth-of-type(2) ul .seal {
-  opacity: 0.15;
+  opacity: 0.11;
   background: url(/assets/becode-seal.png);
   z-index: -1;
   -webkit-transform: translateX(10px) rotate(45deg);
@@ -295,7 +292,6 @@ main {
   width: 150px;
   position: absolute;
   height: 150px;
-  top: 20px;
 }
 
 @media only screen and (max-width: 808px) {
@@ -321,6 +317,60 @@ main {
     bottom: 0;
     right: 0;
     opacity: 0.05;
+  }
+}
+
+@media only screen and (max-width: 672px) {
+  #content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  #content .title {
+    display: contents;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #content .title h3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-right: 1px #afafaf solid;
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
+    padding: 0;
+    padding: 0 5px;
+  }
+  #content article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #content article ul {
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #content article:nth-of-type(2) {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #content article:nth-of-type(2) ul {
+    padding-top: 0px;
   }
 }
 

@@ -1,11 +1,11 @@
 # My Portfolio
-Fresh & Homemade
+Simple, Fresh & Handmade.
 
 ## Tech
 - HTML5
 - SCSS
 - SVGs
 
-![Image](https://i.imgur.com/YZdK0ER.png)
+![Image](http://centus.be/screens/chrome_2020-07-18_19-22-21.jpg)
 
 [Deployed on github](https://jfstassen.github.io/)
